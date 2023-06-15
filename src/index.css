@@ -1,0 +1,21 @@
+:root {
+	--back-color: #06bcc1;
+	--black: #1F1F1F;
+    --deep-black: #000000;
+	--white: #ffffff;
+    --green: #CFFF0B;
+}
+
+#root {
+	font-family: "Lato", sans-serif;
+	color: var(--dull);
+	background-color: var(--black);
+	height: 100%;
+}
+
+body {
+    margin: auto;
+    width: 375px;
+    height: 812px;
+    margin-top: 4rem;
+}
