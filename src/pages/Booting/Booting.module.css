@@ -1,8 +1,10 @@
 .Bimg{
-    width: 235px;
+    
     margin: auto;
 }
 .Bbox{
+    display: flex;
     justify-content: center;
     align-content: center;
+    height: 100%;
 }
