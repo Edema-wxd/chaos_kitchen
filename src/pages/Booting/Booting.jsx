@@ -1,13 +1,13 @@
-import React from 'react'
-import logo from "../../assets/mainlogo.svg"
-import style from "./Booting.module.css"
+import React from "react";
+import logo from "../../assets/mainlogo.svg";
+import style from "./Booting.module.css";
 
 function Booting() {
   return (
-    <div className={style.Bbox} >
+    <div className={style.Bbox}>
       <img className={style.Bimg} src={logo} alt="" />
     </div>
-  )
+  );
 }
 
-export default Booting
+export default Booting;

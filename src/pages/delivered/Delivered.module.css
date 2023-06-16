@@ -1,0 +1,60 @@
+.Dmain {
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.Dring1 {
+  width: 100%;
+  height: 570px;
+  background-image: url(../../assets/Ellipse12.png);
+  margin: auto;
+  display: flex;
+}
+
+.Dring2 {
+  width: 100%;
+  height: 472px;
+  background-image: url(../../assets/Ellipse11.png);
+  margin: auto;
+  display: flex;
+}
+
+.Dring3 {
+  min-width: 100%;
+  height: 390px;
+  background-image: url(../../assets/Ellipse14.png);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.Dpopup {
+  width: 297px;
+  height: 294px;
+  background: rgba(66, 76, 27, 0.2);
+  border: 3px solid var(--green);
+  box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Dcheck {
+  background-color: var(--green);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 139px;
+  border: 1px solid #cfff0b;
+  box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+}
+
+.DCimg{
+    width: 52px;
+    margin: auto;
+}
