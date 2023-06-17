@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/mainlogo.svg";
+import logo from "../../assets/mainlogo.png";
 import style from "./Booting.module.css";
 
 function Booting() {

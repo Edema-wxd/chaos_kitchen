@@ -1,0 +1,33 @@
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.Lfing {
+  display: flex;
+  align-content: flex-end;
+}
+
+.Lwelcome {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.Lpass {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.LPcode {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.LPkeypad {
+  display: grid;
+}
