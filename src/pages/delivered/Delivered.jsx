@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Delivered.module.css";
 import check from "../../assets/check.png"
+import cancel from "../../assets/cancel.png"
 
 function Delivered() {
   return (
@@ -9,6 +10,7 @@ function Delivered() {
         <div className={style.Dring2}>
           <div className={style.Dring3}>
             <div className={style.Dpopup}>
+              <img className={style.DPcancel} src={cancel} alt="" />
               <div className={style.Dcheck}>
                 <img className={style.DCimg} src={check} alt="" />
               </div>
