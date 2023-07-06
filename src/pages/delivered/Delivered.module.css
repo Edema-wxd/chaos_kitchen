@@ -39,16 +39,14 @@
   box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: 18px;
   margin: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .DPcancel {
   z-index: 10;
-  position: absolute;
-  left: 80.07%;
-  top: 33.5%;
-  width: 39px;
+left: 91.07%;
+top: -3.5%;
+width: 39px;
+position: relative;
 }
 
 .Dcheck {
@@ -60,11 +58,12 @@
   border: 1px solid #cfff0b;
   box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: 18px;
-  left: 13.5%;
-  right: 13%;
+  left: -0.5%;
+  top: -14%;
+  position: relative;
 
   box-sizing: border-box;
-  position: absolute;
+  width: 102%;
 }
 
 .DCimg {
@@ -77,7 +76,7 @@
   width: 213px;
   margin: auto;
   position: relative;
-  top: 70px;
+  top: -35px;
 }
 .DTbody {
   font-style: normal;
