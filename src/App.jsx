@@ -2,13 +2,16 @@
 //import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 //import Booting from "./pages/booting/Booting";
 //import Delivered from "./pages/delivered/Delivered";
-import Home from "./pages/home/Home";
+//import { useState } from "react";
+import Landing from "./pages/landing/Landing";
 import rawdata from "./data/Raw";
 
 function App() {
+  //const [cart, setCart] = useState()
+
   return (
     <>
-      <Home fooddisp={rawdata}/>
+      <Landing food={rawdata} location={"home"}/>
     </>
   );
 }

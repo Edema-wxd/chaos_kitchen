@@ -1,0 +1,6 @@
+.Flisthome{
+    display: grid;
+    grid-template-areas: ". .";
+    justify-content: space-evenly;
+    row-gap: 1rem;
+}

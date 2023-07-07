@@ -19,3 +19,20 @@ body {
   height: 812px;
   margin-top: 4rem;
 }
+
+.home{
+  display: flex;
+  flex-direction: column;
+  width: 145px;
+  height: 182px;
+  border-radius: 18px;
+
+}
+.home>div{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 600;
+}

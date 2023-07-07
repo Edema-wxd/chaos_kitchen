@@ -1,0 +1,18 @@
+.Fcard{
+    background-color: white;
+}
+
+.FCimg{
+    border-radius: 18px;
+height: 113px;
+}
+
+.FCtxt{
+    align-content: baseline;
+    padding: 5px;
+
+}
+.FCTprice{
+    margin: auto;
+
+}
