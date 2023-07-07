@@ -1,0 +1,20 @@
+.Cartbtn{
+    background-color: var(--green);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 57px;
+    height: 34px;
+    border-radius: 9px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: none;
+}
+.Cartbtn>p{
+    margin: auto;
+}
+.Cicon{
+    width: 21px;
+    height: 21px;
+    margin: auto;
+}

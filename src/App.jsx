@@ -7,7 +7,6 @@ import Landing from "./pages/landing/Landing";
 import rawdata from "./data/Raw";
 
 function App() {
-  //const [cart, setCart] = useState()
 
   return (
     <>
