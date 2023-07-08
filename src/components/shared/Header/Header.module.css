@@ -1,0 +1,50 @@
+.Header{
+    background-color: var(--black);
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem;
+    border-radius: 0 0 40px 40px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.Hname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.Hsearchbar{
+    display: flex;
+    padding: 8px 11px;
+    background-color: #c5c5c5;
+    font-style: normal;
+    border-radius: 1rem;
+}
+
+.Hsearch{
+ background-color: inherit;
+ border: none;
+ width: 80%;
+ margin: auto;
+ font-family: inherit;
+ font-size: 14px;
+ font-weight: 600;
+}
+
+
+
+.FIhead{
+    color: #FFF;
+font-family: Inter;
+font-size: 15px;
+font-style: italic;
+font-weight: 600;
+line-height: normal;
+}
