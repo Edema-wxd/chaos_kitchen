@@ -1,0 +1,41 @@
+.Categories {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  position: relative;
+  top: -24px;
+}
+
+.Ctxt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.CFTp {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.CFTbtn {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.5;
+  border: none;
+  background-color: inherit;
+}
+.CFTbtn>img{
+    margin-left: 6px;
+}
+
+.CFlist{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    overflow-x: hidden;
+    margin-bottom: 30px;
+}

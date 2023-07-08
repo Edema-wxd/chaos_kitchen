@@ -4,12 +4,12 @@ import Guide from "../../components/Guide"
 import Categories from "../../components/Categories"
 import style from "./Landing.module.css"
 
-function Landing({food, location }) {
+function Landing({food, location, icons }) {
   return (
     <div className={style.Landing}>
         <Header location={location}/>
         <Guide/>
-        <Categories/>
+        <Categories icons={icons} />
         <FoodList data={food} location={location}/>
     </div>
   )

@@ -5,12 +5,13 @@
 //import { useState } from "react";
 import Landing from "./pages/landing/Landing";
 import rawdata from "./data/Raw";
+import icons from "./data/FoodCat"
 
 function App() {
 
   return (
     <>
-      <Landing food={rawdata} location={"home"}/>
+      <Landing icons={icons} food={rawdata} location={"home"}/>
     </>
   );
 }

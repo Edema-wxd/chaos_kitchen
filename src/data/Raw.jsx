@@ -1,6 +1,7 @@
 import icecream from "../assets/foodimg/icecream.png"
 import pizza from "../assets/foodimg/Pepperoni_Pizza 1.png"
 import burger from "../assets/foodimg/burger.png"
+
 const rawdata = [
     {
         id: 1,
