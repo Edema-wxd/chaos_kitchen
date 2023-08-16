@@ -8,7 +8,7 @@ function FoodView({location}) {
   return (
     <div>
         <Header location={location}/>
-        <FoodCard location={location} item={rawdata[1]}/>
+        <FoodCard location={location} item={rawdata[0]}/>
 
     </div>
   )

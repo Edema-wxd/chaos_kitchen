@@ -43,9 +43,9 @@ body {
 
 .view{
   width: 100%;
-  border-radius: 18px;
   display: flex;
   flex-direction: column;
+  height: 70vh;
 
 }
 .view>img{

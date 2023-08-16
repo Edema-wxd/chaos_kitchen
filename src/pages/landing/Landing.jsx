@@ -3,6 +3,7 @@ import Header from "../../components/shared/Header/Header"
 import Guide from "../../components/Guide"
 import Categories from "../../components/Categories"
 import style from "./Landing.module.css"
+import PropTypes from "prop-types"
 
 function Landing({food, location, icons }) {
   return (
@@ -13,6 +14,19 @@ function Landing({food, location, icons }) {
         <FoodList data={food} location={location}/>
     </div>
   )
+}
+
+Landing.defaultProps = {
+  food:{},
+  location:"",
+  icons:{},
+
+}
+
+Landing.propTypes = {
+  food: PropTypes.array,
+  location: PropTypes.string,
+  icon: PropTypes.array
 }
 
 export default Landing
