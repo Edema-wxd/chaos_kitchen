@@ -27,7 +27,7 @@ function FoodCard({ item, location }) {
     ico = <FoodCatIcon key={item.id} foodtype={item.foodtype} icon={item.icon} location={location}/>
     ;
     bucket = [image, text, ico, <Counter location={location} />, <Addcart />];
-  } if (location === "cart") {
+  } else if (location === "cart") {
     image = <img src={item.imgurxl} className={style.FCVimg} alt="" />;
     text = (
       <div className={style.FCVtxt}>
