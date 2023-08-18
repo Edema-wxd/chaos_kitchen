@@ -1,9 +1,41 @@
-import React from 'react'
+import FoodCard from "../../components/shared/FoodCard/FoodCard";
+import style from "./Cart.module.css";
 
 function Cart() {
+  var location = "cart";
+
   return (
-    <div>Cart</div>
-  )
+    <div className={style.Cart}>
+      <div className={style.Cheader}>
+        <h2 className={style.CHtxt}>Order</h2>
+        <p>close btn</p>
+      </div>
+      <div className={style.Cfoods}>
+        <p>foodcards</p>
+      </div>
+      <div className={style.Ccheckout}>
+        <div className={style.CCpromo}>
+          <input type="text" />
+          <p>add text if its promocode</p>
+        </div>
+        <div className={style.CCtxt}>
+          <div className={style.CCTst}>
+            <p>Subtotal</p>
+            <p>{`$46.00`}</p>
+          </div>
+          <div className={style.CCTst}>
+            <p>Promo code</p>
+            <p>{`$6.00`}</p>
+          </div>
+          <div className={style.CCTtotal}>
+            <p>Total</p>
+            <p>{`$40.00`}</p>
+          </div>
+        </div>
+        <button className={style.CCbtn}>Order</button>
+      </div>
+    </div>
+  );
 }
 
-export default Cart
+export default Cart;

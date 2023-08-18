@@ -1,6 +1,8 @@
 import style from "./FoodCatIcon.module.css"
 
-function FoodCatIcon({foodtype, icon}) {
+function FoodCatIcon({foodtype, icon, location}) {
+  // set for defualt location 
+  // set for food view location
   return (
     <div className={style.FCicon}>
       <img src={icon} alt="" />

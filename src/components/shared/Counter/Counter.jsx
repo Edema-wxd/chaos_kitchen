@@ -1,36 +1,30 @@
-import style from "./Counter.module.css"
+import style from "./Counter.module.css";
 import { useState } from "react";
 
-function Counter() {
-  const [counter, setCounter] = useState(0);
- 
+function Counter(location) {
+  const [counter, setCounter] = useState(1);
+
   //increase counter
   const increase = () => {
-    setCounter(count => count + 1);
+    setCounter((count) => count + 1);
   };
- 
+
   //decrease counter
   const decrease = () => {
-    setCounter(count => count - 1);
+    setCounter((count) => count - 1);
   };
- 
-  //reset counter 
-  const reset = () =>{
-    setCounter(0)
-  }
+
   return (
     <div className={style.main}>
-          <div className="counter">
-      <h1>React Counter</h1>
-      <span className="counter__output">{counter}</span>
-      <div className="btn__container">
-        <button className="control__btn" onClick={increase}>+</button>
-        <button className="control__btn" onClick={decrease}>-</button>
-        <button className="reset" onClick={reset}>Reset</button>
-      </div>
+      <button className={style.plus_btn} onClick={increase}>
+        +
+      </button>
+      <span className={style.num_output}>{counter}</span>
+      <button className={style.minus_btn} onClick={decrease}>
+        -
+      </button>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Counter
+export default Counter;

@@ -1,0 +1,19 @@
+.Addcart {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  gap: 4rem;
+  padding: 18px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 2.75rem;
+}
+
+.Addcart>p{
+    margin: 0;
+    padding: 0;
+}

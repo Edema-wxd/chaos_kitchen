@@ -24,10 +24,25 @@ function FoodCard({ item, location }) {
         <p className={style.FCVTweight}>{`~${item.weight} g`}</p>
       </div>
     );
-    ico = <FoodCatIcon key={item.id} foodtype={item.foodtype} icon={item.icon} />
+    ico = <FoodCatIcon key={item.id} foodtype={item.foodtype} icon={item.icon} location={location}/>
     ;
-    bucket = [image, text, ico, <Counter />, <Addcart price={item.price}/>];
-  } else {
+    bucket = [image, text, ico, <Counter location={location} />, <Addcart />];
+  } if (location === "cart") {
+    image = <img src={item.imgurxl} className={style.FCVimg} alt="" />;
+    text = (
+      <div className={style.FCVtxt}>
+        <div className={style.FCVTmain}>
+          <p className={style.FCTname}>{item.name}</p>
+          <p className={style.FCTprice}>{`$${item.price}`}</p>
+        </div>
+        <p className={style.FCVTweight}>{`~${item.weight} g`}</p>
+      </div>
+    );
+    bucket = [image, text,  <Counter location={location} />];
+  
+    
+  }
+  else {
     image = <img src={item.imgurl} className={style.FCimg} alt="" />;
     text = (
       <div className={style.FCtxt}>
@@ -43,3 +58,4 @@ function FoodCard({ item, location }) {
 FoodCard.propTypes = {};
 
 export default FoodCard;
+
