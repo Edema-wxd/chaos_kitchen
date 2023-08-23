@@ -17,10 +17,9 @@ function Delivery() {
         <div className="DDprofile">
           <img src="" alt="" />
           <div className="DDPtxt">
-          <p>Driver name</p>
-          <p>Occupation</p>
+            <p>Driver name</p>
+            <p>Occupation</p>
           </div>
-          
         </div>
         <div className="DDcontact">
           <button>call</button>
