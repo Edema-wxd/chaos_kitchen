@@ -18,17 +18,17 @@ body {
   width: 375px;
   height: 812px;
   margin-top: 4rem;
+  background-color: bisque;
 }
 
-.home{
+.home {
   display: flex;
   flex-direction: column;
   width: 145px;
   height: 182px;
   border-radius: 18px;
-
 }
-.home>div{
+.home > div {
   display: flex;
   flex-direction: row;
   text-align: left;
@@ -37,17 +37,16 @@ body {
   font-weight: 600;
 }
 
-#search:focus{
+#search:focus {
   outline: none;
 }
 
-.view{
+.view {
   width: 100%;
   display: flex;
   flex-direction: column;
   height: 70vh;
-
 }
-.view>img{
-  width:max-content;
+.view > img {
+  width: max-content;
 }

@@ -1,0 +1,21 @@
+.BB {
+  display: flex;
+  gap: 0.8rem;
+  width: 6rem;
+  height: 2.125rem;
+  border-radius: 0.5625rem;
+  background-color: #1f1f1f;
+  border-color: white;
+  border: none;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.BB:hover {
+  background-color: grey;
+}
