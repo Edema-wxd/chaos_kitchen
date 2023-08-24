@@ -35,7 +35,15 @@ function FoodCard({ item, location }) {
         location={location}
       />
     );
-    bucket = [image, text, ico, <Counter location={location} />, <Addcart />];
+    bucket = (
+      <div className={`${style.Fcard} ${location}`}>
+        {image}
+        {text}
+        {ico}
+        <Counter location={location} />
+        <Addcart />
+      </div>
+    );
   } else if (location === "cart") {
     image = <img src={item.imgurxl} className={style.FCVimg} alt="" />;
     text = (
@@ -47,21 +55,32 @@ function FoodCard({ item, location }) {
         <p className={style.FCVTweight}>{`~${item.weight} g`}</p>
       </div>
     );
-    bucket = [image, text, <Counter location={location} />];
+    bucket = (
+      <div className={`${style.Fcard} ${location}`}>
+        {image}
+        {text}
+        <Counter location={location} />
+      </div>
+    );
   } else {
     image = <img src={item.imgurl} className={style.FCimg} alt="" />;
     text = (
-      <button
-        onClick={() => navigate(`/view/${item.id}`)}
-        className={style.FCtxt}
-      >
+      <div className={style.FCtxt}>
         <p className={style.FCTname}>{item.name}</p>
         <p className={style.FCTprice}>{`$${item.price}`}</p>
-      </button>
+      </div>
     );
-    bucket = [image, text];
+    bucket = (
+      <div
+        onClick={() => navigate(`/view/${item.id}`)}
+        className={`${style.Fcard} ${location}`}
+      >
+        {image}
+        {text}
+      </div>
+    );
   }
-  return <div className={`${style.Fcard} ${location}`}>{bucket}</div>;
+  return bucket;
 }
 
 FoodCard.propTypes = {};

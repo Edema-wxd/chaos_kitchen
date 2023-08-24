@@ -1,10 +1,11 @@
 import Cartbtn from "../Cartbtn/Cartbtn";
 import style from "./Header.module.css";
 import Headerlogo from "../../../assets/header logo.png";
-import Search from "../../../assets/Search.png"
-
+import Search from "../../../assets/Search.png";
+import { useNavigate } from "react-router-dom";
 
 function Header({ location }) {
+  const navigate = useNavigate();
   var Added = <></>;
 
   if (location === "home") {
@@ -27,7 +28,7 @@ function Header({ location }) {
   return (
     <div className={style.Header}>
       <div className={style.Hname}>
-        <img src={Headerlogo} alt="" />
+        <img onClick={() => navigate("/")} src={Headerlogo} alt="" />
         <Cartbtn />
       </div>
       <div>{Added}</div>
