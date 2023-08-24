@@ -4,7 +4,6 @@ import Counter from "../Counter/Counter";
 import Addcart from "../Addcart/Addcart";
 import FoodCatIcon from "../FoodCatIcon/FoodCatIcon";
 import { useNavigate } from "react-router-dom";
-import FoodView from "../../../pages/foodview/FoodView";
 
 function FoodCard({ item, location }) {
   //if location is home screen let it be a button else a div
@@ -20,16 +19,13 @@ function FoodCard({ item, location }) {
   if (location === "view") {
     image = <img src={item.imgurxl} className={style.FCVimg} alt="" />;
     text = (
-      <button
-        onClick={() => navigate(`/view/${item.id}`)}
-        className={style.FCVtxt}
-      >
+      <div className={style.FCVtxt}>
         <div className={style.FCVTmain}>
           <p className={style.FCTname}>{item.name}</p>
           <p className={style.FCTprice}>{`$${item.price}`}</p>
         </div>
         <p className={style.FCVTweight}>{`~${item.weight} g`}</p>
-      </button>
+      </div>
     );
     ico = (
       <FoodCatIcon
@@ -55,10 +51,13 @@ function FoodCard({ item, location }) {
   } else {
     image = <img src={item.imgurl} className={style.FCimg} alt="" />;
     text = (
-      <div className={style.FCtxt}>
+      <button
+        onClick={() => navigate(`/view/${item.id}`)}
+        className={style.FCtxt}
+      >
         <p className={style.FCTname}>{item.name}</p>
         <p className={style.FCTprice}>{`$${item.price}`}</p>
-      </div>
+      </button>
     );
     bucket = [image, text];
   }

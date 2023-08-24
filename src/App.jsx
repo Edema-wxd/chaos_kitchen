@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Delivered from "./pages/delivered/Delivered";
 import Landing from "./pages/landing/Landing";
 import rawdata from "./data/Raw";
@@ -21,6 +21,7 @@ function App() {
         <Route path="/delivered" element={<Delivered />}></Route>
         <Route path="/view/:id"  element={<FoodView />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
+        <Route path="*" element={<h1>no page</h1>}></Route>
       </Routes>
     </AnimatePresence>
   );

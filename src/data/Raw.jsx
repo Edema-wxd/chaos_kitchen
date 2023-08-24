@@ -6,7 +6,7 @@ import pizzaico from "../assets/foodicons/Vctor.svg";
 
 const rawdata = [
   {
-    id: 1,
+    id: 0,
     imgurl: pizza,
     imgurxl: piz,
     name: "Pepperoni Pizza",
@@ -16,14 +16,14 @@ const rawdata = [
     foodtype: "Pizza",
   },
   {
-    id: 2,
+    id: 1,
     imgurl: icecream,
     name: "Strawberry Ice Cream",
     price: 16,
     weight: 160,
   },
   {
-    id: 3,
+    id: 2,
     imgurl: burger,
     name: "Beef Burger",
     price: 10,

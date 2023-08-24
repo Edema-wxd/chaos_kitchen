@@ -7,13 +7,14 @@ import { useParams } from "react-router-dom";
 
 function FoodView() {
   var location = "view";
-  let { id } = useParams;
+  const  params = useParams();
+  console.log(params);
 
   return (
     <Pagechange>
       <div>
         <Header location={location} />
-        <FoodCard location={location} item={rawdata[id]} />
+        <FoodCard location={location} item={rawdata[params.id]} />
       </div>
     </Pagechange>
   );

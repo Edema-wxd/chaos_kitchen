@@ -13,6 +13,7 @@ function Counter(location) {
   const decrease = () => {
     setCounter((count) => count - 1);
   };
+  //TODO: disable decrease button when counter = 0
 
   return (
     <div className={style.main}>
