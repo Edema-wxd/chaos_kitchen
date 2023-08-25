@@ -1,19 +1,16 @@
 import style from "./Counter.module.css";
-import { useState } from "react";
+import { useContext } from "react";
+import Gcontext from "../../../context/Gcontext";
 
 function Counter(location) {
-  const [counter, setCounter] = useState(1);
-
-  //increase counter
-  const increase = () => {
-    setCounter((count) => count + 1);
-  };
-
-  //decrease counter
-  const decrease = () => {
-    setCounter((count) => count - 1);
-  };
+  const { counter, increase, decrease } = useContext(Gcontext);
   //TODO: disable decrease button when counter = 0
+  var flip = "";
+  if ((counter === 0) | (counter < 1)) {
+    flip = true;
+  } else {
+    flip = false;
+  }
 
   return (
     <div className={style.main}>
@@ -21,7 +18,7 @@ function Counter(location) {
         +
       </button>
       <span className={style.num_output}>{counter}</span>
-      <button className={style.minus_btn} onClick={decrease}>
+      <button disabled={flip} className={style.minus_btn} onClick={decrease}>
         -
       </button>
     </div>

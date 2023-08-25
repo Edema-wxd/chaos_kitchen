@@ -1,15 +1,16 @@
 //import style from "./FoodView.module.css"
 import Header from "../../components/shared/Header/Header";
 import FoodCard from "../../components/shared/FoodCard/FoodCard";
-import rawdata from "../../data/Raw";
 import Pagechange from "../../animation/Pagechange";
+import Gcontext from "../../context/Gcontext";
 import { useParams } from "react-router-dom";
+import { useContext } from "react";
 
 function FoodView() {
-  var location = "view";
-  const  params = useParams();
-  console.log(params);
+  const { rawdata } = useContext(Gcontext);
 
+  var location = "view";
+  const params = useParams();
   return (
     <Pagechange>
       <div>

@@ -1,8 +1,11 @@
 import style from "./Categories.module.css";
 import FoodCatIcon from "./shared/FoodCatIcon/FoodCatIcon";
 import arrow from "../assets/arrow.svg";
+import { useContext } from "react";
+import Gcontext from "../context/Gcontext";
 
-function Categories({ icons }) {
+function Categories() {
+  const { icons } = useContext(Gcontext);
   return (
     <div className={style.Categories}>
       <div className={style.Ctxt}>

@@ -41,7 +41,7 @@ function FoodCard({ item, location }) {
         {text}
         {ico}
         <Counter location={location} />
-        <Addcart />
+        <Addcart price={item.price} />
       </div>
     );
   } else if (location === "cart") {
