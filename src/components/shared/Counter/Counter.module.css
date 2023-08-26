@@ -28,14 +28,11 @@
 
 .Cmain {
   text-align: left;
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 400;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-}
-.Cmain:hover {
-  background-color: aqua;
+  gap: 0.5rem;
 }
 
 .Cnum_output {
@@ -44,16 +41,16 @@
 
 .Cplus_btn,
 .Cminus_btn {
-  width: 39px;
-  height: 41px;
+  width: 1.2rem;
+  height: 1.25rem;
   font-size: inherit;
   padding: auto;
   background-color: #d9d9d9;
   border: none;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 4px 0px 0px 4px;
   transition: 0.2s ease-in-out;
 }
 
 .Cminus_btn {
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 0px 4px 4px 0px;
 }

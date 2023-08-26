@@ -7,7 +7,6 @@ import Booting from "../booting/Booting";
 import Pagechange from "../../animation/Pagechange";
 import { useState, useEffect } from "react";
 
-
 function Landing() {
   const location = "landing";
 
@@ -29,7 +28,7 @@ function Landing() {
           <div className={style.Landing}>
             <Header location={location} />
             <Guide />
-            <Categories location={location} />
+            <Categories/>
             <FoodList location={location} />
           </div>
         </Pagechange>
@@ -37,7 +36,5 @@ function Landing() {
     </>
   );
 }
-
-
 
 export default Landing;

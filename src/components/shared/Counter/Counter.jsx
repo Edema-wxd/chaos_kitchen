@@ -12,6 +12,7 @@ function Counter(location) {
   } else {
     flip = false;
   }
+  
   if (location === "cart") {
     pack = (
       <div onClick={editcart} className={style.Cmain}>

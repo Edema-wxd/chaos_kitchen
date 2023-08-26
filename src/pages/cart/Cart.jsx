@@ -1,5 +1,6 @@
 import Pagechange from "../../animation/Pagechange";
 import Backbtn from "../../components/shared/Backbtn/Backbtn";
+import FoodCard from "../../components/shared/FoodCard/FoodCard";
 //import FoodCard from "../../components/shared/FoodCard/FoodCard";
 import style from "./Cart.module.css";
 
@@ -13,7 +14,9 @@ function Cart() {
           <h2>Order</h2>
           <Backbtn location={location} />
         </div>
-        <div className={style.Cfoods}></div>
+        <div className={style.Cfoods}>
+          <FoodCard item={1} location={location} />
+        </div>
         <div className={style.Ccheckout}>
           <div className={style.CCpromo}>
             <input type="text" />

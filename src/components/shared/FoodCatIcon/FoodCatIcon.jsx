@@ -1,16 +1,17 @@
-import style from "./FoodCatIcon.module.css"
+import style from "./FoodCatIcon.module.css";
 
-function FoodCatIcon({foodtype, icon, location}) {
-  // set for defualt location 
+function FoodCatIcon({ foodtype, icon, location }) {
   // set for food view location
+  if (location === "view") {
+  }
+
+  // set for defualt location
   return (
     <div className={style.FCicon}>
       <img src={icon} alt="" />
-      <p>
-        {foodtype}
-      </p>
+      <p>{foodtype}</p>
     </div>
-  )
+  );
 }
 
-export default FoodCatIcon
+export default FoodCatIcon;

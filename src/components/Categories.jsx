@@ -6,6 +6,7 @@ import Gcontext from "../context/Gcontext";
 
 function Categories() {
   const { icons } = useContext(Gcontext);
+
   return (
     <div className={style.Categories}>
       <div className={style.Ctxt}>
@@ -18,9 +19,9 @@ function Categories() {
       <div className={style.CFlist}>
         {Object.keys(icons).map((item) => (
           <FoodCatIcon
-            key={item.id}
-            foodtype={item.foodtype}
-            icon={item.icon}
+            key={item}
+            foodtype={icons[item].foodtype}
+            icon={icons[item].icon}
             location={"landing"}
           />
         ))}

@@ -5,7 +5,7 @@ import Gcontext from "../../../context/Gcontext";
 import { useContext } from "react";
 
 function Cartbtn() {
-  const { cart } = useContext(Gcontext);
+  const { cart, } = useContext(Gcontext);
   var value = "";
   if (cart !== 0) {
     value = <p>{cart}</p>;
