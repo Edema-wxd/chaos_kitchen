@@ -19,3 +19,11 @@
 .BB:hover {
   background-color: grey;
 }
+
+.BBC {
+  margin: auto 0;
+  background: inherit;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+}

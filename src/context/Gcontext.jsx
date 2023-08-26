@@ -16,12 +16,27 @@ export const GProvider = ({ children }) => {
   const decrease = () => {
     setCounter((count) => count - 1);
   };
+
+  const [cart, setCart] = useState(0);
+
+  //add to cart // modify this to a dictionary that takes the id of object added and the total amount  
+  const addtocart = () => {
+    setCart((cart) => cart + counter);
+    //reset counter
+    setCounter(0);
+  };
+
+  // remove from cart
+  const removecart = () => {};
   return (
     <Gcontext.Provider
       value={{
         counter,
         increase,
         decrease,
+        cart,
+        addtocart,
+        removecart,
         rawdata,
         icons,
       }}

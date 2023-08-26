@@ -1,0 +1,100 @@
+.Cart {
+  background: #d9d9d9;
+  min-height: 100vh;
+}
+
+.Cheader {
+  background-color: #000;
+  color: #fff;
+  border-radius: 0 0 1.5rem 1.5rem;
+  display: flex;
+  padding: 2.7rem 1.4rem;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.CHtxt {
+}
+
+.Cfoods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 1.2rem;
+}
+
+.Ccheckout {
+  margin: 1.5rem 1.2rem;
+}
+
+.CCpromo {
+  border-radius: 0.5625rem;
+  height: 2.875rem;
+  border: none;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.CCpromo > input {
+  margin: auto auto auto 0.9rem;
+  border: none;
+  height: 1rem;
+}
+.CCpromo > p {
+  background-color: #cfff0b;
+  border-radius: 9px;
+  width: 11.5rem;
+  height: 2.125rem;
+  color: #000;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-align: center;
+  margin: auto 0.8rem auto auto;
+}
+
+.CCtxt {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.CCTst {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.CCTst > p {
+  margin: 0;
+}
+
+.CCTtotal {
+  display: flex;
+  justify-content: space-between;
+  color: #1a1a1a;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.CCTtotal > p {
+  margin: 0;
+}
+
+.CCbtn {
+  height: 2.875rem;
+  width: 21.0625rem;
+  border-radius: 0.5625rem;
+  background: #1a1a1a;
+  margin: 0 auto;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}

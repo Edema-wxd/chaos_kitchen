@@ -4,17 +4,17 @@ import FoodCard from "../../components/shared/FoodCard/FoodCard";
 import style from "./Cart.module.css";
 
 function Cart() {
-  var location = "cart";
+  const location = "cart";
 
   return (
     <Pagechange>
       <div className={style.Cart}>
         <div className={style.Cheader}>
           <h2 className={style.CHtxt}>Order</h2>
-          <Backbtn />
+          <Backbtn location={location} />
         </div>
         <div className={style.Cfoods}>
-          <p>foodcards</p>
+          
         </div>
         <div className={style.Ccheckout}>
           <div className={style.CCpromo}>
