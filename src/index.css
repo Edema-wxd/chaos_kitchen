@@ -54,3 +54,14 @@ a {
 .view > img {
   width: max-content;
 }
+
+.cart {
+  height: 5.8rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  border-radius: 0.625rem;
+  margin: 0;
+  border: none;
+  color: #000000;
+}

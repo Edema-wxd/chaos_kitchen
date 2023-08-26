@@ -6,12 +6,12 @@
   align-items: center;
   gap: 1.5rem;
 }
-.num_output{
-    font-weight: 900;
+.num_output {
+  font-weight: 900;
 }
 
-
-.plus_btn, .minus_btn {
+.plus_btn,
+.minus_btn {
   width: 39px;
   height: 41px;
   font-size: inherit;
@@ -22,6 +22,38 @@
   transition: 0.2s ease-in-out;
 }
 
-.minus_btn{
-  border-radius:  0px 8px 8px 0px;
+.minus_btn {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.Cmain {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.Cmain:hover {
+  background-color: aqua;
+}
+
+.Cnum_output {
+  font-weight: 900;
+}
+
+.Cplus_btn,
+.Cminus_btn {
+  width: 39px;
+  height: 41px;
+  font-size: inherit;
+  padding: auto;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  transition: 0.2s ease-in-out;
+}
+
+.Cminus_btn {
+  border-radius: 0px 8px 8px 0px;
 }

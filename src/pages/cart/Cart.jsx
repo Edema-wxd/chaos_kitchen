@@ -1,6 +1,6 @@
 import Pagechange from "../../animation/Pagechange";
 import Backbtn from "../../components/shared/Backbtn/Backbtn";
-import FoodCard from "../../components/shared/FoodCard/FoodCard";
+//import FoodCard from "../../components/shared/FoodCard/FoodCard";
 import style from "./Cart.module.css";
 
 function Cart() {
@@ -10,16 +10,14 @@ function Cart() {
     <Pagechange>
       <div className={style.Cart}>
         <div className={style.Cheader}>
-          <h2 className={style.CHtxt}>Order</h2>
+          <h2>Order</h2>
           <Backbtn location={location} />
         </div>
-        <div className={style.Cfoods}>
-          
-        </div>
+        <div className={style.Cfoods}></div>
         <div className={style.Ccheckout}>
           <div className={style.CCpromo}>
             <input type="text" />
-            <p>add text if its promocode</p>
+            <p>Promocode code confirmed</p>
           </div>
           <div className={style.CCtxt}>
             <div className={style.CCTst}>

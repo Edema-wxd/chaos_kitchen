@@ -41,25 +41,25 @@ function FoodCard({ item, location }) {
         {text}
         {ico}
         <Counter location={location} />
-        <Addcart price={item.price} />
+        <Addcart item={item} />
       </div>
     );
   } else if (location === "cart") {
-    image = <img src={item.imgurxl} className={style.FCVimg} alt="" />;
+    image = <img src={item.imgurxl} className={style.FCCimg} alt="" />;
     text = (
-      <div className={style.FCVtxt}>
-        <div className={style.FCVTmain}>
-          <p className={style.FCTname}>{item.name}</p>
-          <p className={style.FCTprice}>{`$${item.price}`}</p>
+      <div className={style.FCCtxt}>
+        <div className={style.FCCTmain}>
+          <p className={style.FCCTname}>{item.name}</p>
+          <p className={style.FCCTprice}>{`$${item.price}`}</p>
         </div>
-        <p className={style.FCVTweight}>{`~${item.weight} g`}</p>
+        <p className={style.FCCTweight}>{`~${item.weight} g`}</p>
+        <Counter location={location} />
       </div>
     );
     bucket = (
       <div className={`${style.Fcard} ${location}`}>
         {image}
         {text}
-        <Counter location={location} />
       </div>
     );
   } else {

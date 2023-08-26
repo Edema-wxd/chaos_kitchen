@@ -6,6 +6,7 @@
   border-radius: 18px;
   height: 113px;
 }
+
 .FCVimg {
   width: 100%;
 }
@@ -15,6 +16,7 @@
   padding: 5px;
   margin: auto;
 }
+
 .FCTprice {
   margin: auto;
 }
@@ -23,6 +25,7 @@
   align-content: baseline;
   padding: 5px;
 }
+
 .FCVTmain {
   display: flex;
   flex-direction: row;
@@ -35,17 +38,46 @@
   font-weight: 600;
   line-height: normal;
 }
-.FCVTmain>p{
-    margin-top: 23px;
-    margin-bottom: 0px;
+
+.FCVTmain > p {
+  margin-top: 23px;
+  margin-bottom: 0px;
 }
 
 .FCVTweight {
-    color: #000;
-    font-size: 14px;
-    font-weight: 500;
-    opacity: 0.5;
-    margin:  11px 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.5;
+  margin: 11px 0;
 }
 
+.FCCimg {
+  width: 6.4375rem;
+  height: 5.8125rem;
+  border-radius: 0.625rem 0rem 0rem 0.625rem;
+}
 
+.FCCtxt {
+  display: flex;
+  flex-direction: column;
+}
+
+.FCCTmain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.FCCTmain > p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  max-width: 10rem;
+}
+
+.FCCTweight {
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
