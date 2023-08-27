@@ -17,6 +17,11 @@
   margin: auto;
 }
 
+.FCTname {
+  word-wrap: normal;
+  width: min-content;
+}
+
 .FCTprice {
   margin: auto;
 }
@@ -53,14 +58,17 @@
 }
 
 .FCCimg {
-  width: 6.4375rem;
-  height: 5.8125rem;
+  min-width: 6.4375rem;
+  min-height: 5.8125rem;
   border-radius: 0.625rem 0rem 0rem 0.625rem;
 }
 
 .FCCtxt {
   display: flex;
   flex-direction: column;
+  padding: 0.8rem 1.25rem 1rem 0.8rem;
+  justify-content: space-between;
+  min-width: 12rem;
 }
 
 .FCCTmain {
@@ -80,4 +88,5 @@
   font-size: 0.875rem;
   font-weight: 500;
   opacity: 0.5;
+  margin: 0 auto 0 0;
 }

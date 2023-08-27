@@ -1,6 +1,6 @@
 .Cart {
   background: #d9d9d9;
-  min-height: 100vh;
+  min-height: 88vh;
 }
 
 .Cheader {
@@ -16,18 +16,29 @@
 .Cheader > h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  
 }
 
 .Cfoods {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1.5rem 1.2rem;
+  padding: 0.5rem 1.2rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 20rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.Cfoods::-webkit-scrollbar {
+  display: none;
 }
 
 .Ccheckout {
   margin: 1.5rem 1.2rem;
+  max-width: 21rem;
+  position: absolute;
+  bottom: 4rem;
 }
 
 .CCpromo {

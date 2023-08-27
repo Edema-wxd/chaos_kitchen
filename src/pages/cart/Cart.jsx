@@ -16,6 +16,11 @@ function Cart() {
         </div>
         <div className={style.Cfoods}>
           <FoodCard item={1} location={location} />
+          <FoodCard item={1} location={location} />
+          <FoodCard item={1} location={location} />
+          <FoodCard item={1} location={location} />
+          <FoodCard item={1} location={location} />
+          <FoodCard item={1} location={location} />
         </div>
         <div className={style.Ccheckout}>
           <div className={style.CCpromo}>

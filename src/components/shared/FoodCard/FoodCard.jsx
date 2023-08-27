@@ -53,7 +53,7 @@ function FoodCard({ item, location }) {
           <p className={style.FCCTprice}>{`$${item.price}`}</p>
         </div>
         <p className={style.FCCTweight}>{`~${item.weight} g`}</p>
-        <Counter location={location} />
+        <Counter location={"cart"} />
       </div>
     );
     bucket = (

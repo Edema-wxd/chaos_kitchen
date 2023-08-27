@@ -2,17 +2,18 @@ import style from "./Counter.module.css";
 import { useContext } from "react";
 import Gcontext from "../../../context/Gcontext";
 
-function Counter(location) {
-  const { counter, increase, decrease, editcart} = useContext(Gcontext);
+function Counter({location}) {
+  const { counter, increase, decrease, editcart } = useContext(Gcontext);
   var flip = "";
   var pack = "";
+
   //TODO: disable decrease button when counter = 0
   if ((counter === 0) | (counter < 1)) {
     flip = true;
   } else {
     flip = false;
   }
-  
+
   if (location === "cart") {
     pack = (
       <div onClick={editcart} className={style.Cmain}>
@@ -25,7 +26,7 @@ function Counter(location) {
         </button>
       </div>
     );
-  } else {
+  } else  {
     pack = (
       <div className={style.main}>
         <button className={style.plus_btn} onClick={increase}>

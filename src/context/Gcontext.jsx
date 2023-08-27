@@ -23,6 +23,8 @@ export const GProvider = ({ children }) => {
     setCounter((count) => count - 1);
   };
 
+  
+
   //add to cart // modify this to a dictionary that takes the id of object added and the total amount
   const addtocart = (newItem) => {
     setCart((cart) => cart + counter);
