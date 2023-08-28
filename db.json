@@ -1,8 +1,16 @@
 {
   "cart": [
     {
-      "food-id": 0,
-      "food-count": 0
+      "foodid": 0,
+      "foodcount": 0
+    },
+    {
+      "foodid": 1,
+      "foodcount": 0
+    },
+    {
+      "foodid": 2,
+      "foodcount": 0
     }
   ]
 }
