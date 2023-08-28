@@ -5,7 +5,7 @@ import Addcart from "../Addcart/Addcart";
 import FoodCatIcon from "../FoodCatIcon/FoodCatIcon";
 import { useNavigate } from "react-router-dom";
 
-function FoodCard({ item, location }) {
+function FoodCard({ cdata, item, location }) {
   //if location is home screen let it be a button else a div
   // on click generate the page for the food item
 
@@ -53,7 +53,7 @@ function FoodCard({ item, location }) {
           <p className={style.FCCTprice}>{`$${item.price}`}</p>
         </div>
         <p className={style.FCCTweight}>{`~${item.weight} g`}</p>
-        <Counter location={"cart"} />
+        <Counter ccount={cdata.foodcount} location={"cart"} />
       </div>
     );
     bucket = (

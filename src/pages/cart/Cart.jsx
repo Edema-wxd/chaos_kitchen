@@ -37,6 +37,7 @@ function Cart() {
             <FoodCard
               key={cuserdata[item].foodid}
               item={rawdata[item]}
+              cdata={cuserdata[item]}
               location={location}
             />
           ))}

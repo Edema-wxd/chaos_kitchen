@@ -1,9 +1,10 @@
 import style from "./Counter.module.css";
 import { useContext } from "react";
 import Gcontext from "../../../context/Gcontext";
+import Ccounter from "../../../class/ccounter";
 
-function Counter({location}) {
-  const { counter, increase, decrease, editcart } = useContext(Gcontext);
+function Counter({ location, ccount }) {
+  const { counter, increase, decrease } = useContext(Gcontext);
   var flip = "";
   var pack = "";
 
@@ -15,18 +16,19 @@ function Counter({location}) {
   }
 
   if (location === "cart") {
-    pack = (
+    pack = <Ccounter raw={ccount} />;
+    /*pack = (
       <div onClick={editcart} className={style.Cmain}>
         <button className={style.Cplus_btn} onClick={increase}>
           +
         </button>
-        <span className={style.Cnum_output}>{counter}</span>
+        <span className={style.Cnum_output}>{ccount}</span>
         <button disabled={flip} className={style.Cminus_btn} onClick={decrease}>
           -
         </button>
       </div>
-    );
-  } else  {
+    );*/
+  } else {
     pack = (
       <div className={style.main}>
         <button className={style.plus_btn} onClick={increase}>
