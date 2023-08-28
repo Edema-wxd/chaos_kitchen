@@ -12,6 +12,7 @@ export const GProvider = ({ children }) => {
     item: {},
     edit: false,
   });
+  const [bill, setBill] = useState(0);
 
   //increase counter
   const increase = () => {
@@ -22,8 +23,6 @@ export const GProvider = ({ children }) => {
   const decrease = () => {
     setCounter((count) => count - 1);
   };
-
-  
 
   //add to cart // modify this to a dictionary that takes the id of object added and the total amount
   const addtocart = (newItem) => {
@@ -48,6 +47,8 @@ export const GProvider = ({ children }) => {
     <Gcontext.Provider
       value={{
         counter,
+        bill,
+        setBill,
         increase,
         decrease,
         cart,

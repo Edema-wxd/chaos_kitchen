@@ -1,16 +1,28 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
+import Gcontext from "../context/Gcontext";
 import style from "../components/shared/Counter/Counter.module.css";
 
-function Ccounter({ raw }) {
+function Ccounter({ raw, price }) {
   const [ccount, setCcount] = useState(raw);
   var cflip = false;
+  const { bill, setBill } = useContext(Gcontext);
+
+  useEffect(() => {
+    warm()
+  }, []);
+
+  const warm = async()=>{
+    setBill((bill) => bill + ccount * price);
+  }
 
   const cincrease = () => {
     setCcount((ccount) => ccount + 1);
+    setBill((bill) => bill + price);
   };
 
   const cdecrease = () => {
     setCcount((ccount) => ccount - 1);
+    setBill((bill) => bill - price);
   };
 
   if ((ccount === 0) | (ccount < 1)) {

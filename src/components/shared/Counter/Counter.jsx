@@ -3,7 +3,7 @@ import { useContext } from "react";
 import Gcontext from "../../../context/Gcontext";
 import Ccounter from "../../../class/ccounter";
 
-function Counter({ location, ccount }) {
+function Counter({ location, ccount, price }) {
   const { counter, increase, decrease } = useContext(Gcontext);
   var flip = "";
   var pack = "";
@@ -16,7 +16,7 @@ function Counter({ location, ccount }) {
   }
 
   if (location === "cart") {
-    pack = <Ccounter raw={ccount} />;
+    pack = <Ccounter price={price} raw={ccount} />;
     /*pack = (
       <div onClick={editcart} className={style.Cmain}>
         <button className={style.Cplus_btn} onClick={increase}>

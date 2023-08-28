@@ -10,7 +10,7 @@ import { useContext, useEffect, useState } from "react";
 function Cart() {
   const location = "cart";
   const [cuserdata, setCuserdata] = useState([]);
-  const { rawdata } = useContext(Gcontext);
+  const { rawdata, bill } = useContext(Gcontext);
 
   useEffect(() => {
     fetchCart();
@@ -50,7 +50,7 @@ function Cart() {
           <div className={style.CCtxt}>
             <div className={style.CCTst}>
               <p>Subtotal</p>
-              <p>{`$46.00`}</p>
+              <p>{`$${bill}`}</p>
             </div>
             <div className={style.CCTst}>
               <p>Promo code</p>
@@ -58,7 +58,7 @@ function Cart() {
             </div>
             <div className={style.CCTtotal}>
               <p>Total</p>
-              <p>{`$40.00`}</p>
+              <p>{`$${bill}`}</p>
             </div>
           </div>
           <button className={style.CCbtn}>Order</button>
