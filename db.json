@@ -1,0 +1,14 @@
+{
+  "cart": [
+    {
+      "id": 0,
+      "imgurl": "./assets/foodimg/Pepperoni_Pizza 1.png",
+      "imgurxl": "./assets/foodimg/xl/piz.png",
+      "name": "Pepperoni Pizza",
+      "price": 20,
+      "weight": 300,
+      "icon": "./assets/foodicons/Vctor.svg",
+      "foodtype": "Pizza"
+    }
+  ]
+}
