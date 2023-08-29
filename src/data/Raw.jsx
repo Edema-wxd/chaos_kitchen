@@ -18,6 +18,7 @@ const rawdata = [
   {
     id: 1,
     imgurl: icecream,
+    imgurxl: icecream,
     name: "Strawberry Ice Cream",
     price: 16,
     weight: 160,
@@ -25,6 +26,7 @@ const rawdata = [
   {
     id: 2,
     imgurl: burger,
+    imgurxl: burger,
     name: "Beef Burger",
     price: 10,
     weight: 120,

@@ -8,11 +8,9 @@ export const GProvider = ({ children }) => {
   const [counter, setCounter] = useState(1);
   const [cart, setCart] = useState(0);
   const [box, setBox] = useState([{}]);
-  const [boxEdit, setBoxEdit] = useState({
-    item: {},
-    edit: false,
-  });
   const [bill, setBill] = useState(0);
+  const [wallet, setWallet] = useState(1000);
+  const [paid, setPaid] = useState(false);
 
   //increase counter
   const increase = () => {
@@ -32,13 +30,13 @@ export const GProvider = ({ children }) => {
     setCounter(0);
   };
 
-  // set item to be updated
-  const editcart = (item) => {
-    setBoxEdit({
-      item,
-      edit: true,
-    });
+  // pay for items
+  const paying = () => {
+    setWallet((wallet) => wallet - bill);
+    setPaid(true);
+    //add funtion to clear cart or store order else where
   };
+
   // calls a function if the item is being increased or not
 
   // remove from cart
@@ -55,7 +53,9 @@ export const GProvider = ({ children }) => {
         addtocart,
         rawdata,
         icons,
-        editcart,
+        wallet,
+        paying,
+        paid,
       }}
     >
       {children}

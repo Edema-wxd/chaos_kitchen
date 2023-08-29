@@ -1,0 +1,77 @@
+.Pmodule {
+  display: flex;
+  flex-direction: column;
+  padding: 1.88rem 1.2rem 3rem;
+  border-radius: 2.5rem 2.5rem 0rem 0rem;
+  border: 1px solid #000;
+  background: #1f1f1f;
+  position: absolute;
+  bottom: 50px;
+  width: 59.5vw;
+  margin: auto;
+}
+.Pmodule > h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: auto;
+}
+.PMoptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.PMoptions > button {
+  width: 8.4375rem;
+  height: 8.4375rem;
+  background-color: black;
+  border-radius: 1.5625rem;
+  border: 3px solid #cfff0b;
+  text-align: center;
+  transition: transform 400ms ease-out;
+  color: #fff;
+  font-size: 0.7rem;
+}
+.PMoptions > button > :first-child,
+button > :last-child {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.PMoptions > button:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 4px 2px rgba(255, 255, 255, 0.863);
+  background-color: #424c1b;
+}
+
+.PMwallet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.PMWbalance {
+  display: flex;
+  flex-direction: column;
+}
+.PMWtxt {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.PMWcash {
+  color: #cfff0b;
+}
+.PMtopup {
+  background-color: inherit;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+.PMorder {
+  border-radius: 0.5625rem;
+  border: none;
+  background: #cfff0b;
+  color: black;
+  height: 2.875rem;
+}

@@ -8,12 +8,13 @@ function Ccounter({ raw, price }) {
   const { bill, setBill } = useContext(Gcontext);
 
   useEffect(() => {
-    warm()
+    return () => warm();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const warm = async()=>{
+  const warm = async () => {
     setBill((bill) => bill + ccount * price);
-  }
+  };
 
   const cincrease = () => {
     setCcount((ccount) => ccount + 1);
