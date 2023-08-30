@@ -1,10 +1,12 @@
 .Fcard {
   background-color: white;
+  border-radius: 1.125rem;
 }
 
 .FCimg {
   border-radius: 18px;
   height: 113px;
+  width: 145px;
 }
 
 .FCVimg {
@@ -15,6 +17,10 @@
   align-content: baseline;
   padding: 5px;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
 }
 
 .FCTname {
@@ -23,18 +29,22 @@
 }
 
 .FCTprice {
-  margin: auto;
+  margin-bottom: 1rem;
+  align-self: end;
 }
 
 .FCVtxt {
   align-content: baseline;
-  padding: 5px;
+  padding: 1.4rem;
+  padding-bottom: 0rem;
 }
+
+
 
 .FCVTmain {
   display: flex;
   flex-direction: row;
-  gap: 5.75rem;
+  gap: 3rem;
   justify-content: space-between;
   color: #000;
   text-align: center;
@@ -45,8 +55,12 @@
 }
 
 .FCVTmain > p {
-  margin-top: 23px;
-  margin-bottom: 0px;
+  margin: 0px;
+}
+
+.FCVTmain > p:first-of-type {
+  min-width: 13rem;
+  text-align: left;
 }
 
 .FCVTweight {

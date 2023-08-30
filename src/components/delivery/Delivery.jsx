@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Delivery.module.css"
+import style from "./Delivery.module.css";
 import phone from "../../assets/driver/phone.svg";
 import bike from "../../assets/driver/bike.svg";
 import complete from "../../assets/driver/complete.svg";
@@ -17,8 +17,11 @@ function Delivery() {
       </div>
       <div className={style.Dprogress}>
         <img src={contact} alt="" />
+        <p className="">****</p>
         <img src={pan} alt="" />
+        <p className="">****</p>
         <img src={bike} alt="" />
+        <p className="">****</p>
         <img src={complete} alt="" />
       </div>
       <div className={style.Ddriver}>

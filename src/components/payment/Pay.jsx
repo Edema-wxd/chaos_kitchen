@@ -6,12 +6,11 @@ import up from "../../assets/tup.svg";
 import wl from "../../assets/wlogo.png";
 
 function Pay() {
-  const { bill, wallet, paying } = useContext(Gcontext);
+  const { bill, wallet, paying, topup } = useContext(Gcontext);
   // add function to disable button until the funds in the wallet is greater than bill
 
-  var pflip = true; 
-  // && bill > 0
-  if (wallet > bill ) {
+  var pflip = true;
+  if (wallet > bill && bill > 0) {
     pflip = false;
   } else {
     pflip = true;
@@ -43,7 +42,7 @@ function Pay() {
           </p>
         </div>
 
-        <button className={style.PMtopup}>
+        <button onClick={topup} className={style.PMtopup}>
           <img src={up} alt="" />
           <p>Top Up</p>
         </button>

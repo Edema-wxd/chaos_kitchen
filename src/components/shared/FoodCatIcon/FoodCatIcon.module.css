@@ -11,14 +11,64 @@
   font-size: 13px;
   font-weight: 600;
   align-items: center;
-
+  margin: 1rem;
 }
-.FCicon>img{
-    width: 20px;
+.FCicon > img {
+  width: 20px;
 }
 
-.FCicon>p{
-    display: block ruby;
-    font-family: inherit;
-    margin: auto 0px;
+.FCicon > p {
+  display: block ruby;
+  font-family: inherit;
+  margin: auto 0px;
+}
+
+.FCLicon {
+  width: max-content;
+  min-width: 100px;
+  height: 29px;
+  border-radius: 8px;
+  padding: 0.25rem;
+  background-color: #fffcfc;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 13px;
+  font-weight: 600;
+  align-items: center;
+  margin: 1rem;
+}
+.FCLicon > img {
+  width: 20px;
+}
+
+.FCLicon > p {
+  display: block ruby;
+  font-family: inherit;
+  margin: auto 0px;
+}
+
+.FCCarticon {
+  width: max-content;
+  min-width: 100px;
+  height: 29px;
+  border-radius: 8px;
+  padding: 0.25rem;
+  background-color: #fffcfc;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 13px;
+  font-weight: 600;
+  align-items: center;
+  margin: 1rem;
+}
+.FCCarticon > img {
+  width: 20px;
+}
+
+.FCCarticon > p {
+  display: block ruby;
+  font-family: inherit;
+  margin: auto 0px;
 }

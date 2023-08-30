@@ -11,7 +11,6 @@ function FoodCard({ cdata, item, location }) {
 
   var image = "";
   var text = "";
-  var ico = "";
   var bucket = "";
 
   const navigate = useNavigate();
@@ -25,23 +24,21 @@ function FoodCard({ cdata, item, location }) {
           <p className={style.FCTprice}>{`$${item.price}`}</p>
         </div>
         <p className={style.FCVTweight}>{`~${item.weight} g`}</p>
+
+        <FoodCatIcon
+          key={item.id}
+          foodtype={item.foodtype}
+          icon={item.icon}
+          location={location}
+        />
+        <Counter location={location} />
+        <Addcart item={item} />
       </div>
-    );
-    ico = (
-      <FoodCatIcon
-        key={item.id}
-        foodtype={item.foodtype}
-        icon={item.icon}
-        location={location}
-      />
     );
     bucket = (
       <div className={`${style.Fcard} ${location}`}>
         {image}
         {text}
-        {ico}
-        <Counter location={location} />
-        <Addcart item={item} />
       </div>
     );
   } else if (location === "cart") {
@@ -53,7 +50,11 @@ function FoodCard({ cdata, item, location }) {
           <p className={style.FCCTprice}>{`$${item.price}`}</p>
         </div>
         <p className={style.FCCTweight}>{`~${item.weight} g`}</p>
-        <Counter price={item.price} ccount={cdata.foodcount} location={"cart"} />
+        <Counter
+          price={item.price}
+          ccount={cdata.foodcount}
+          location={"cart"}
+        />
       </div>
     );
     bucket = (

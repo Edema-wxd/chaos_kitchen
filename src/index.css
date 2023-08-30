@@ -49,7 +49,8 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 40.5rem;
+  
 }
 .view > img {
   width: max-content;

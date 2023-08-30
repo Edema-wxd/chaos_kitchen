@@ -29,11 +29,18 @@
 }
 
 .Dprogress {
-  border-top: 2px solid #d9d9d9;
-  border-bottom: 2px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  color: #fff;
+}
+
+.Dprogress > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto;
 }
 .Ddriver {
   display: flex;
@@ -83,5 +90,8 @@
   background-color: white;
   border-radius: 2.75rem;
   border: none;
+  margin: auto;
+}
+.DDcontact > button > img {
   margin: auto;
 }
