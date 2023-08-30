@@ -1,0 +1,87 @@
+.Dmod {
+  display: flex;
+  flex-direction: column;
+  padding: 1.88rem 1.2rem 3rem;
+  border-radius: 2.5rem 2.5rem 0rem 0rem;
+  border: 1px solid #000;
+  background: #1f1f1f;
+  position: absolute;
+  bottom: 52px;
+  width: 20.9rem;
+  margin: auto;
+  gap: 2rem;
+}
+.Dtime {
+  display: flex;
+  flex-direction: column;
+}
+.Dtime > p {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 0.875rem;
+  opacity: 0.5;
+}
+.Dtime > p:first-of-type {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.Dprogress {
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.Ddriver {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.DDprofile {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+.DDprofile > img {
+  width: 4.6875rem;
+  height: 4.6875rem;
+  border-radius: 4.6875rem;
+}
+.DDprofile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.DDprofile > div > p:first-of-type {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.DDprofile > div > p {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.DDcontact {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  justify-content: center;
+}
+.DDcontact > button {
+  width: 2.75rem;
+  height: 2.75rem;
+  background-color: white;
+  border-radius: 2.75rem;
+  border: none;
+  margin: auto;
+}

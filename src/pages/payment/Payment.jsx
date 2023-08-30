@@ -10,7 +10,7 @@ function Payment() {
   if (paid) {
     mod = <Delivery />;
   } else {
-    mod = <Pay />;
+    mod = <Delivery />;
   }
   return <div>{mod}</div>;
 }

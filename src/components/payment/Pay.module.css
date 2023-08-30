@@ -6,9 +6,10 @@
   border: 1px solid #000;
   background: #1f1f1f;
   position: absolute;
-  bottom: 50px;
-  width: 59.5vw;
+  bottom: 52px;
+  width: 20.9rem;
   margin: auto;
+  gap: 2rem;
 }
 .Pmodule > h1 {
   color: #fff;
@@ -52,11 +53,22 @@ button > :last-child {
 .PMWbalance {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.PMWbalance:first-child {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-content: end;
+}
+.PMWbalance > p {
+  margin: 0;
 }
 .PMWtxt {
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
+  margin-top: 0%;
 }
 .PMWcash {
   color: #cfff0b;
@@ -68,10 +80,21 @@ button > :last-child {
   font-weight: 500;
   color: #fff;
 }
+.PMtopup > p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: auto;
+}
 .PMorder {
   border-radius: 0.5625rem;
   border: none;
   background: #cfff0b;
   color: black;
   height: 2.875rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.PMorder:disabled {
+  background-color: #d9d9d9;
 }

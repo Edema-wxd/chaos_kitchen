@@ -2,13 +2,16 @@ import React from "react";
 import { useContext } from "react";
 import Gcontext from "../../context/Gcontext";
 import style from "./Pay.module.css";
+import up from "../../assets/tup.svg";
+import wl from "../../assets/wlogo.png";
 
 function Pay() {
   const { bill, wallet, paying } = useContext(Gcontext);
   // add function to disable button until the funds in the wallet is greater than bill
 
-  var pflip = true;
-  if (wallet > bill) {
+  var pflip = true; 
+  // && bill > 0
+  if (wallet > bill ) {
     pflip = false;
   } else {
     pflip = true;
@@ -26,19 +29,22 @@ function Pay() {
         <button>
           <p>Cash</p>
           <p>0% Discount</p>
-          <p>{`$${bill}`}</p>
+          <p>{`$${bill.toFixed(2)}`}</p>
         </button>
       </div>
       <div className={style.PMwallet}>
         <div className={style.PMWbalance}>
-          <img src="" alt="" />
+          <p>
+            <img src={wl} alt="" />
+            Wallet
+          </p>
           <p className={style.PMWtxt}>
             My Balance: <span className={style.PMWcash}>{`USD ${wallet}`}</span>{" "}
           </p>
         </div>
 
         <button className={style.PMtopup}>
-          <img src="" alt="" />
+          <img src={up} alt="" />
           <p>Top Up</p>
         </button>
       </div>
