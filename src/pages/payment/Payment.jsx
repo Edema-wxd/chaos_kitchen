@@ -10,9 +10,9 @@ function Payment() {
   if (paid) {
     mod = <Delivery />;
   } else {
-    mod = <Delivery />;
+    mod = <Pay />;
   }
-  return <div>{mod}</div>;
+  return <div className="payment">{mod}</div>;
 }
 
 export default Payment;

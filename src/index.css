@@ -50,7 +50,6 @@ a {
   display: flex;
   flex-direction: column;
   height: 40.5rem;
-  
 }
 .view > img {
   width: max-content;
@@ -72,4 +71,9 @@ a {
 .cart:hover {
   transform: translate(-5px, -5px);
   box-shadow: 5px 5px 4px 2px rgba(155, 214, 66, 0.3);
+}
+
+.payment {
+  height: 812px;
+  background-image: url(../src/assets/map.png);
 }

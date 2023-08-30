@@ -25,27 +25,27 @@
 
 .FCLicon {
   width: max-content;
-  min-width: 100px;
-  height: 29px;
-  border-radius: 8px;
+  min-width: 6rem;
+  height: 1.8rem;
+  border-radius: 0.5rem;
   padding: 0.25rem;
   background-color: #fffcfc;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 13px;
   font-weight: 600;
   align-items: center;
   margin: 1rem;
 }
 .FCLicon > img {
-  width: 20px;
+  width: 1rem;
 }
 
 .FCLicon > p {
-  display: block ruby;
-  font-family: inherit;
   margin: auto 0px;
+  color: #000;
+  font-size: 0.8125rem;
+  font-weight: 600;
 }
 
 .FCCarticon {

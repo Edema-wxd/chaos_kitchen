@@ -5,7 +5,7 @@ import { useContext } from "react";
 import Gcontext from "../context/Gcontext";
 
 function Categories() {
-  const { icons } = useContext(Gcontext);
+  const { foodcatdata } = useContext(Gcontext);
 
   return (
     <div className={style.Categories}>
@@ -17,11 +17,11 @@ function Categories() {
         </button>
       </div>
       <div className={style.CFlist}>
-        {Object.keys(icons).map((item) => (
+        {Object.keys(foodcatdata).map((item) => (
           <FoodCatIcon
             key={item}
-            foodtype={icons[item].foodtype}
-            icon={icons[item].icon}
+            foodtype={foodcatdata[item].foodtype}
+            icon={foodcatdata[item].icon}
             location={"landing"}
           />
         ))}

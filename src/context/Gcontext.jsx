@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 import rawdata from "../data/Raw";
-import icons from "../data/FoodCat";
+import foodcatdata from "../data/FoodCat";
 
 const Gcontext = createContext();
 
@@ -56,7 +56,7 @@ export const GProvider = ({ children }) => {
         cart,
         addtocart,
         rawdata,
-        icons,
+        foodcatdata,
         wallet,
         paying,
         paid,

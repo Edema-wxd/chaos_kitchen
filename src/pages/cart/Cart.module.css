@@ -59,12 +59,10 @@
   outline: none;
 }
 .CCpromo > p {
-  background-color: #cfff0b;
+  color: #000000;
   border-radius: 9px;
   width: 11.5rem;
-  height: 2.125rem;
-  color: #000;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center;
   margin: auto 0.8rem auto auto;

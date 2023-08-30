@@ -52,7 +52,7 @@ function Cart() {
         <div className={style.Ccheckout}>
           <div className={style.CCpromo}>
             <input type="text" />
-            <p>Promocode code confirmed</p>
+            <p>Insert Code</p>
           </div>
           <div className={style.CCtxt}>
             <div className={style.CCTst}>
@@ -61,7 +61,7 @@ function Cart() {
             </div>
             <div className={style.CCTst}>
               <p>Promo code</p>
-              <p>{`$6.00`}</p>
+              <p>{`$0.00`}</p>
             </div>
             <div className={style.CCTtotal}>
               <p>Total</p>
