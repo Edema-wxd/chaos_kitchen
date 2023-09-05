@@ -7,7 +7,7 @@ function Addcart({ item }) {
 
   return (
     <button
-      onClick={() => addtocart([item.id, counter])}
+      onClick={() => addtocart({ id: item.id, foodcount: counter })}
       className={style.Addcart}
     >
       <p>Add to cart</p>

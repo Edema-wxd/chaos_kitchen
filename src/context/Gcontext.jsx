@@ -7,7 +7,7 @@ const Gcontext = createContext();
 export const GProvider = ({ children }) => {
   const [counter, setCounter] = useState(1);
   const [cart, setCart] = useState(0);
-  const [box, setBox] = useState([{}]);
+  const [box, setBox] = useState([]);
   const [bill, setBill] = useState(0);
   const [wallet, setWallet] = useState(0);
   const [paid, setPaid] = useState(false);
@@ -23,10 +23,17 @@ export const GProvider = ({ children }) => {
   };
 
   //add to cart // modify this to a dictionary that takes the id of object added and the total amount
-  const addtocart = (newItem) => {
+  const addtocart = async (newItem) => {
+    const res = await fetch(`http://localhost:5000/cart`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newItem),
+    });
+
+    const datta = await res.json();
     setCart((cart) => cart + counter);
+    setBox([datta, ...box]);
     //reset counter
-    setBox([newItem, ...box]);
     setCounter(0);
   };
 
@@ -50,6 +57,7 @@ export const GProvider = ({ children }) => {
       value={{
         counter,
         bill,
+        box,
         setBill,
         increase,
         decrease,

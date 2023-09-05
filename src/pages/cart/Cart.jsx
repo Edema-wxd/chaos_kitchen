@@ -33,7 +33,7 @@ function Cart() {
   } else {
     scr = Object.keys(cuserdata).map((item) => (
       <FoodCard
-        key={cuserdata[item].foodid}
+        key={cuserdata[item].id}
         item={rawdata[item]}
         cdata={cuserdata[item]}
         location={location}
