@@ -22,7 +22,7 @@ function Landing() {
   return (
     <>
       {loading ? (
-        <Booting />
+        <h2>booting</h2>
       ) : (
         <Pagechange>
           <div className={style.Landing}>
