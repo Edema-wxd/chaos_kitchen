@@ -3,7 +3,6 @@ import Header from "../../components/shared/Header/Header";
 import Guide from "../../components/Guide";
 import Categories from "../../components/Categories";
 import style from "./Landing.module.css";
-import Booting from "../booting/Booting";
 import Pagechange from "../../animation/Pagechange";
 import { useState, useEffect } from "react";
 
