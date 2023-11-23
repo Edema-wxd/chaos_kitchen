@@ -28,7 +28,7 @@ function Landing() {
           <div className={style.Landing}>
             <Header location={location} />
             <Guide />
-            <Categories/>
+            <Categories />
             <FoodList location={location} />
           </div>
         </Pagechange>
@@ -38,4 +38,3 @@ function Landing() {
 }
 
 export default Landing;
- 
